@@ -8,6 +8,7 @@
         <scene sceneID="VW3-7A-UaT">
             <objects>
                 <navigationController id="Fb3-j1-el5" customClass="SXNavController" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3DF-eT-EV2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,25 +25,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZB7-wm-LSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-697" y="120"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="i0E-N6-0fE">
-            <objects>
-                <viewController id="R7W-Q3-zoP" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="caE-ET-8Lj"/>
-                        <viewControllerLayoutGuide type="bottom" id="6fG-WB-i0Y"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="r1n-ya-LPi">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IEb-fC-IuO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-667" y="993"/>
+            <point key="canvasLocation" x="-539" y="-8"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -53,21 +36,21 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoview_image_default_white" translatesAutoresizingMaskIntoConstraints="NO" id="TqL-rs-oEW">
-                                <rect key="frame" x="28" y="299" width="320" height="70"/>
+                                <rect key="frame" x="0.0" y="249" width="320" height="70"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Wy-Sw-c0j">
-                                <rect key="frame" x="0.0" y="64" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="s2g-rh-Suo"/>
                                 </constraints>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-Rp-afC">
-                                <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                                <rect key="frame" x="0.0" y="94" width="320" height="474"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,7 +71,7 @@
                         <barButtonItem key="backBarButtonItem" title="主页" id="P4N-DD-m30"/>
                         <barButtonItem key="leftBarButtonItem" image="top_navigation_menuicon" id="cm4-NW-Hz7"/>
                         <view key="titleView" contentMode="scaleToFill" id="kYI-wd-bEY">
-                            <rect key="frame" x="163" y="11" width="50" height="23"/>
+                            <rect key="frame" x="135" y="11" width="50" height="23"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11111" translatesAutoresizingMaskIntoConstraints="NO" id="F5C-Lj-Tfl">
@@ -104,11 +87,11 @@
                         </view>
                         <barButtonItem key="rightBarButtonItem" image="top_navigation_infoicon" id="cLT-0p-4Gg">
                             <connections>
-                                <segue destination="VD5-GR-y2z" kind="push" id="Lp7-P0-X2x"/>
+                                <segue destination="VD5-GR-y2z" kind="show" id="Lp7-P0-X2x"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="bigScrollView" destination="0lu-Rp-afC" id="Ms0-OY-7Bh"/>
                         <outlet property="smallScrollView" destination="1Wy-Sw-c0j" id="duA-S2-l6K"/>
@@ -116,12 +99,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-177.5" y="176.5"/>
+            <point key="canvasLocation" x="-120" y="-8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RBT-uS-GpY">
             <objects>
-                <navigationController id="vsl-rM-ArI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="mainBoardId" id="vsl-rM-ArI" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qdb-Pp-x2S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,7 +116,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIF-Vi-05C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="-740"/>
+            <point key="canvasLocation" x="296" y="-710"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2kQ-KM-T7e">
@@ -143,14 +127,14 @@
                         <viewControllerLayoutGuide type="bottom" id="Efp-eo-SBs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3yl-cY-XLc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CkL-jX-9lx">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dsx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-5t-FV3">
-                                        <rect key="frame" x="145" y="206" width="99" height="101"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-5t-FV3">
+                                        <rect key="frame" x="0.0" y="233" width="320" height="101"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="54"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -168,7 +152,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9ya-4a-bIU"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42B-vq-cR6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
