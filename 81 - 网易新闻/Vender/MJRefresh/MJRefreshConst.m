@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-const CGFloat MJRefreshViewHeight = 64.0;
-const CGFloat MJRefreshFastAnimationDuration = 0.25;
-const CGFloat MJRefreshSlowAnimationDuration = 0.4;
+const CGFloat MJRefreshViewHeight = 64.0;//上部刷新区域的高度
+const CGFloat MJRefreshFastAnimationDuration = 0.25;//上部刷新区域的刷新时间
+const CGFloat MJRefreshSlowAnimationDuration = 0.4;//上部刷新区域刷新完成以后回到顶端的时间
 
 NSString *const MJRefreshFooterPullToRefresh = @"上拉可以加载更多数据";
 NSString *const MJRefreshFooterReleaseToRefresh = @"松开立即加载更多数据";
