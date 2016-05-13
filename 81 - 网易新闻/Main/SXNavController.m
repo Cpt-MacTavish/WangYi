@@ -29,6 +29,7 @@
     
 }
 
+
 //- (void)changeBlack
 //{
 //    [navBar setBarTintColor:[UIColor blackColor]];
